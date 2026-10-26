@@ -1,0 +1,38 @@
+# Secrets : ne jamais publier
+.env
+*.env
+!.env.example
+backend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+*.log
+
+# Jeux de données et archives (non redistribués)
+backend/data/
+*.zip
+
+# Sauvegardes locales
+sauvegarde_*/
+NutriPredict_avant_*/
+*.bak
+
+# React Native / Android
+node_modules/
+**/android/.gradle/
+**/android/app/build/
+**/android/build/
+**/ios/Pods/
+*.apk
+*.keystore
+!debug.keystore
+
+# Éditeurs et système
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.avant_*

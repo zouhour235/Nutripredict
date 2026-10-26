@@ -1,0 +1,21 @@
+import pandas as pd
+
+print("=" * 50)
+print("DATASET 1 — Données biologiques (Anémie)")
+print("=" * 50)
+df1 = pd.read_csv("data/diagnosed_cbc_data_v4.csv")
+print(f"Nombre de lignes : {df1.shape[0]}")
+print(f"Nombre de colonnes : {df1.shape[1]}")
+print(f"Colonnes : {list(df1.columns)}")
+print(f"Valeurs manquantes :\n{df1.isnull().sum()}")
+print(f"\nAperçu :\n{df1.head()}")
+
+print("\n" + "=" * 50)
+print("DATASET 2 — Symptômes nutritionnels")
+print("=" * 50)
+df2 = pd.read_excel("data/Nutritional_dataset.xlsx")
+print(f"Nombre de lignes : {df2.shape[0]}")
+print(f"Nombre de colonnes : {df2.shape[1]}")
+print(f"Colonnes : {list(df2.columns)}")
+print(f"Valeurs manquantes :\n{df2.isnull().sum()}")
+print(f"\nAperçu :\n{df2.head()}")
